@@ -1,0 +1,36 @@
+.form{
+    margin-top: 2rem;
+    .subheading{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .form-row{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .column{
+
+            .input{
+                padding: 6px 8px;
+                font-size: 1rem;
+                border: 1px solid #dfdfdf;
+                &:focus{
+                    outline: 1px solid #dfdfdf;
+                }
+            }
+            .adjust{
+                grid-column: 1 / span 2;
+            }
+            .button{
+                float: right;
+                padding: 6px 20px;
+                background: #3E4BB9;
+                border: 1px solid #3E4BB9;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+}
